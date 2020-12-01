@@ -175,27 +175,28 @@ body {
   border-right-style:solid;
 }
 
-.wrapper .sidebar ul li {
+.wrapper .sidebar ul a li {
   padding: 20px;
   border-bottom: 1px solid #f3bd58;
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.wrapper .sidebar ul li a {
-  color: #d6d6d6;
+.wrapper .sidebar ul a {
+  color: #ffffff;
   display: block;
+  size: 100;
 }
 
-.wrapper .sidebar ul li a .fas {
+.wrapper .sidebar ul a li .fas {
   width: 25px;
 }
 
-.wrapper .sidebar ul li:hover {
+.wrapper .sidebar ul a li:hover {
   background-color: #414141;
 }
 
-.wrapper .sidebar ul li:hover a {
+.wrapper .sidebar ul a li:hover {
   color: rgb(255, 196, 0);
 }
 
