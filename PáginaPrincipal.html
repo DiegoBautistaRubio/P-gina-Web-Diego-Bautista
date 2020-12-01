@@ -14,6 +14,33 @@
     <meta name="viewport" content="width=device-width" , user-scalable=no , initial-scale=1.0 , maximum-scale=1.0 ,
         minimum-scale=1.0>
     <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -30,7 +57,7 @@
                     </li>
                     <ul>
                         <li><a href="#Perfil"><i class="fas fa-user"></i>Perfil</a></li>
-                        <li><a href="#Formación"><i class="fas fa-graduation-cap"></i>Formación</a></li>
+                        <li><a href="#Formacion"><i class="fas fa-graduation-cap"></i>Formación</a></li>
                         <li><a href="#Habilidades"><i class="fas fa-code"></i>Habilidades</a></li>
                         <li><a href="#Portfolio"><i class="fas fa-project-diagram"></i>Portfolio</a></li>
                         <li><a href="#Aficiones"><i class="fas fa-sun"></i>Aficiones</a></li>
@@ -52,15 +79,15 @@
                     <h1><img src="Pasted-20201129-121503_preview_rev_1.png" alt=""><br>
                         <h3>Estudiante de Ingeniería Informática</h3>
                         <div class="contacto">
-                            <a  href="mailto:diegobautista241098@gmail.com"><i class="fas fa-envelope"></i></a>
-                            <a  href="https://www.linkedin.com/in/diego-bautista-rubio-95416a135/"><i
+                            <a href="mailto:diegobautista241098@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/diego-bautista-rubio-95416a135/"><i
                                     class="fab fa-linkedin"></i></a>
                         </div>
                         <br>
                         <form method="get" action="CV-DiegoBautistaRubio.pdf">
                             <button type="submit" class="curriculum">DESCARGAR CV</button>
                         </form>
-                        
+
                     </h1>
 
                 </div>
@@ -68,7 +95,7 @@
         </header>
         <main>
             <section class="sobre-nosotros">
-                <h2 id="Perfil" class="titulo">Perfil</h2>
+                <img id="Perfil" src="Perfil.png" class="titulo"></img>
                 <div class="contenedor-seccion">
 
 
@@ -76,7 +103,7 @@
 
             </section>
             <section class="sobre-nosotros">
-                <h2 id="Formacion" class="titulo">Formación</h2>
+                <img id="#Formacion" src="Formacion.png" class="titulo"></img>
                 <div class="contenedor-seccion">
 
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -87,7 +114,7 @@
 
             </section>
             <section class="sobre-nosotros">
-                <h2 id="Habilidades" class="titulo">Habilidades</h2>
+                <img id="Habilidades" src="Habilidades.png" class="titulo"></img>
                 <div class="contenedor-seccion">
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -98,7 +125,7 @@
 
             </section>
             <section class="sobre-nosotros">
-                <h2 id="Portfolio" class="titulo">Portfolio</h2>
+                <img id="Portfolio" src="Portfolio.png" class="titulo"></img>
                 <div class="contenedor-seccion">
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -109,7 +136,7 @@
 
             </section>
             <section class="sobre-nosotros">
-                <h2 id="Aficiones" class="titulo">Aficiones</h2>
+                <img id="Aficiones" src="Aficiones.png" class="titulo"></img>
                 <div class="contenedor-seccion">
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -119,7 +146,7 @@
 
             </section>
             <section class="sobre-nosotros">
-                <h2 id="Contacto" class="titulo">Contacto</h2>
+                <img id="Contacto" src="Contacto.png" class="titulo"></img>
                 <div class="contenedor-seccion">
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
                     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
