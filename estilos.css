@@ -118,12 +118,20 @@ section {
 .row{
   margin-top: 15px;
   margin-right: 50px;
-    margin-left: 50px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 411px) {
+  .row{
+    font-size: 14px;
+  }
 }
 
 #texto-perfil{
   margin-top: 10px;
   width: 100%;
+  font-size: 1.1rem;
 }
 #img-perfil{
   margin-top: 5px;
@@ -154,20 +162,57 @@ section {
 
 #img-uclm{
   max-width: 220px;
-  margin:20px;
+  margin-left: 10px;
+  
 }
 #img-esi{
   max-width: 156px;
-  margin:20px;
+  
 }
 #img-Galileo{
   max-width: 350px;
-  margin:20px;
+  
 }
 #img-enp{
   max-width: 420px;
-  margin:20px;
+  
 }
+#img-vemare{
+  max-width: 370px;
+  
+}
+#img-CruzRoja{
+  max-width: 200px;
+  
+}
+#img-vemare {
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+  width:100%;
+  }
+  #img-vemare:hover {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+  }
+#img-CruzRoja {
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+  width:100%;
+  }
+  #img-CruzRoja:hover {
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+  }
 #img-esi {
   -webkit-transition:all .9s ease; /* Safari y Chrome */
   -moz-transition:all .9s ease; /* Firefox */
@@ -224,7 +269,34 @@ section {
         -o-transform:scale(1.25);
         transform:scale(1.25);
         }
+        .div-img{
+         text-align: center;
+        }
+        .timeline-panel{
+          text-align: center;
+        }
 
+        @media screen and (max-width: 411px) {
+          .div-img a{
+              font-size: 0.3em;
+          }
+        }
+
+        @media screen and (max-width: 411px) {
+          .timeline-title{
+              font-size: 18px;
+          }
+        }
+        @media screen and (max-width: 411px) {
+          .div-img{
+              font-size: 18px;
+          }
+        }
+        @media screen and (max-width: 411px) {
+          .timeline-body{
+            font-size: 14px;
+          }
+        }
 
 /*Type-writer*/
 
@@ -273,6 +345,19 @@ section {
   
 }
 
+/*Habilidades*/
+
+
+
+
+
+/*Aficiones*/
+
+#texto-carrusel{
+  color: rgb(0, 0, 0);
+  background-color: rgba(207, 207, 207, 0.938);
+}
+
 /*Footer*/
 #footer-icons li{
   display: inline;
@@ -290,6 +375,14 @@ section {
 #top-footer{
   background-color: rgba(43, 36, 30, 0.747);
 
+}
+
+.col-sm-4{
+  position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 13px;
 }
 
 /*Scroll down arrow*/
