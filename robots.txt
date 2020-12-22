@@ -1,0 +1,6 @@
+Sitemap: https://diegobautistarubio.github.io/sitemap.xml
+
+User-agent: *
+Disallow: /boostrap/
+Disallow: /img/
+
