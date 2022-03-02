@@ -101,12 +101,13 @@ i{
   text-align: center;
 }
 
-#img-top-page{
-  margin-top: 40px;
-  border-radius: 30%;
+#img-top-page {
+  margin-top: 30px;
+  border-radius: 37%;
   border-style: groove;
   width: 40%;
   max-width: 500px;
+  min-width: 200px;
   font-size: 4vh;
 }
 
@@ -148,10 +149,13 @@ section {
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 
 }
-#img-perfil{
+#img-perfil {
   margin-top: 5px;
   border: #474032;
   border-style: outset;
+  width: 25%;
+  max-width: 25%;
+  min-width: 125px;
 }
 
 @include media-breakpoint-up(sm) {
@@ -193,11 +197,22 @@ section {
   
 }
 #img-vemare{
-  max-width: 370px;
+  max-width: 300px;
   
 }
 #img-CruzRoja{
   max-width: 200px;
+  margin-top: 10px;
+}
+
+#img-Ntt{
+  max-width: 225px;
+  margin-top: 10px;
+}
+
+#img-cojali{
+  max-width: 175px;
+  margin-top: 15px;
   
 }
 #img-vemare {
@@ -214,6 +229,34 @@ section {
   -o-transform:scale(1.25);
   transform:scale(1.25);
   }
+  #img-Ntt{
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+    width:100%;
+    }
+    #img-Ntt:hover {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+    }
+  #img-cojali{
+      -webkit-transition:all .9s ease; /* Safari y Chrome */
+      -moz-transition:all .9s ease; /* Firefox */
+      -o-transition:all .9s ease; /* IE 9 */
+      -ms-transition:all .9s ease; /* Opera */
+      width:100%;
+    }
+    #img-cojali:hover {
+      -webkit-transform:scale(1.15);
+      -moz-transform:scale(1.15);
+      -ms-transform:scale(1.15);
+      -o-transform:scale(1.15);
+      transform:scale(1.15);
+    }
 #img-CruzRoja {
   -webkit-transition:all .9s ease; /* Safari y Chrome */
   -moz-transition:all .9s ease; /* Firefox */
@@ -361,6 +404,10 @@ section {
 }
 
 /*Habilidades*/
+#habilidades {
+  margin-block: 54px;
+}
+
 .progress{
   margin:5px;
 }
@@ -664,6 +711,11 @@ header .Textos-Header {
   padding: 20px;
   position: relative;
 }
+.timeline-vertical {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
 .timeline:before {
   top: 40px;
   bottom: 0;
@@ -759,9 +811,6 @@ header .Textos-Header {
 }
 .timeline .timeline-item .timeline-panel .timeline-body > p + p {
   margin-top: 5px;
-}
-.timeline .timeline-item:last-child:nth-child(even) {
-  float: right;
 }
 .timeline .timeline-item:nth-child(even) .timeline-panel {
   float: right;
